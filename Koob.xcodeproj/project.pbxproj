@@ -13,6 +13,8 @@
 		7269A0EE1BE4290800D8D031 /* Koob.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7269A0EC1BE4290800D8D031 /* Koob.xcdatamodeld */; };
 		7269A0F01BE4290800D8D031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7269A0EF1BE4290800D8D031 /* Assets.xcassets */; };
 		7269A0F31BE4290800D8D031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7269A0F11BE4290800D8D031 /* LaunchScreen.storyboard */; };
+		7269A0FB1BE42D1600D8D031 /* MJRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7269A0FA1BE42D1600D8D031 /* MJRefreshControl.swift */; };
+		72D4A2FE1BE604F9000979EA /* MJPullToRefreshLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A2FD1BE604F9000979EA /* MJPullToRefreshLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		7269A0EF1BE4290800D8D031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7269A0F21BE4290800D8D031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7269A0F41BE4290800D8D031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7269A0FA1BE42D1600D8D031 /* MJRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJRefreshControl.swift; sourceTree = "<group>"; };
+		72D4A2FD1BE604F9000979EA /* MJPullToRefreshLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MJPullToRefreshLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				7269A0E51BE4290700D8D031 /* AppDelegate.swift */,
+				72D4A2FD1BE604F9000979EA /* MJPullToRefreshLoader.swift */,
+				7269A0FA1BE42D1600D8D031 /* MJRefreshControl.swift */,
 				7269A0E71BE4290700D8D031 /* ViewController.swift */,
 				7269A0E91BE4290700D8D031 /* Main.storyboard */,
 				7269A0EF1BE4290800D8D031 /* Assets.xcassets */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7269A0FB1BE42D1600D8D031 /* MJRefreshControl.swift in Sources */,
 				7269A0E81BE4290700D8D031 /* ViewController.swift in Sources */,
 				7269A0EE1BE4290800D8D031 /* Koob.xcdatamodeld in Sources */,
 				7269A0E61BE4290700D8D031 /* AppDelegate.swift in Sources */,
+				72D4A2FE1BE604F9000979EA /* MJPullToRefreshLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +298,7 @@
 				7269A0F91BE4290800D8D031 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
