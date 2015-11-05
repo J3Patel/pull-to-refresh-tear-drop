@@ -26,16 +26,24 @@ class MJPullToRefreshLoader: UIView {
         let smallCircleRadius: CGFloat = (radius / 2) - 3
         
         circlePath = UIBezierPath(arcCenter: circleCenter, radius: radius, startAngle: 0 , endAngle: 150, clockwise: true)
+      if bounds.height < 50 {
+        circlePath = UIBezierPath(arcCenter: circleCenter, radius: max(0,radius - ((50 - bounds.height) / 2)) , startAngle: 0 , endAngle: 150, clockwise: true)
+      }
         smallCircle = UIBezierPath(arcCenter: CGPoint(x: centerPoint.x, y: bounds.height - 30), radius: smallCircleRadius, startAngle: 0, endAngle: 150, clockwise: true)
-        smallCircle.fill()
-       
+
+        UIColor.blueColor().setFill()
+      UIColor.blueColor().set()
         circlePath.fill()
         circlePath.stroke()
+
+      if bounds.height < 50 {
+        return
+      }
+       smallCircle.fill()
+       var x: CGFloat = 500
+       x = x / bounds.height
         
-        var x: CGFloat = 500
-        x = x / bounds.height
-        
-        if x < 7 {
+       if x < 7 {
             x = x / 2
 
         }

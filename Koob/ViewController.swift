@@ -39,4 +39,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func scrollViewDidScroll(scrollView: UIScrollView) {
       
     }
+
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    refreshControl.endRefreshing()
+  }
 }
